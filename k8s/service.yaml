@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 
 metadata:
-  name: go-argo-demo
-
+  name: go-app
+  namespace: go-app
 spec:
   type: ClusterIP
 
   selector:
-    app: go-argo-demo
+    app: go-app
 
   ports:
   - port: 80
